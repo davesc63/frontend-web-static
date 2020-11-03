@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>David McGovern - Profile</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top" onload="updateCounter()">
+        <!-- hit count script-->
+        <script>
+        function updateCounter() {
+            fetch("https://rxxhiaphyj.execute-api.ap-southeast-2.amazonaws.com/prod/", {
+                method: "GET",
+            })
+                .then((response) => {
+                    if (
+                        // check if response's status is 200
+                        response.ok
+                    ) {
+                        return response.json();
+                    } else {
+                        throw new Error("something went wrong");
+                    }
+                })
+                .then(console.log("Counter incremented successfully!"));
+        }
+    </script>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">David McGovern</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="" /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                    <!--li.nav-item-->
+                    <!--    a.nav-link.js-scroll-trigger(href='#education') Education-->
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                    <!--li.nav-item-->
+                    <!--    a.nav-link.js-scroll-trigger(href='#interests') Interests-->
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Certifications</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        David
+                        <span class="text-primary">McGovern</span>
+                    </h1>
+                    <div class="subheading mb-5">
+                        Brisbane · Queensland ·
+                        <a href="mailto:gov@amazon.com">gov@amazon.com</a>
+                    </div>
+                    <p class="lead mb-5">
+                        An experienced Solutions Architect, Account Manager and Sales Engineer with a passion for Cyber Security.
+                        <br />
+                        <br />
+                        A dynamic professional with experience in Sales, Technical Consulting, Solutions Architecture and Operational roles. Engagement at all levels from the C-Suite to Systems Administrators.
+                        <br />
+                        <br />
+                        Active public speaker who comfortably presents at niche CxO round-tables all the way up to audiences of hundreds of people at key industry events.
+                    </p>
+                    <div class="social-icons">
+                        <a class="social-icon" href="www.linkedin.com/in/davidmcgovern83" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="https://github.com/davesc63" target="_blank"><i class="fab fa-github"></i></a>
+                        <a class="social-icon" href="#"><i class="fab fa-medium"></i></a>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Experience-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Experience</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Senior Solutions Architect</h3>
+                            <div class="subheading mb-3">Amazon Web Services (AWS)</div>
+                            <p>
+                                Work Hard. Have Fun. Make History.
+                                <br />
+                                Helping customers achieve business outcomes with AWS cloud services
+                                <br />
+                                Building fun experiments (like this serverless profile)
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">March 2020 - Present</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Territory Manager - QLD & NT</h3>
+                            <div class="subheading mb-3">Check Point Software Technologies</div>
+                            <p>As the Territory Manager for QLD and NT I delivered the management of key existing Account and Partner relationships across both states. I achieved strong new customer acquisitions from Small Business to Large Enterprise while also performing Channel Development; on-boarding new Channel Partners in key focus areas such as Cloud-First, Mobility and MSSP.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">December 2018 - March 2020</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Senior Security Engineer</h3>
+                            <div class="subheading mb-3">Check Point Software Technologies</div>
+                            <p>Senior sales engineer / solutions architect for the pre-sales team in Queensland. With 7 years of pre-sales experience at Check Point, I delivered technical expertise and pre-sales outcomes to a team of three Enterprise Account Managers. As the Senior Security Engineer, I was a mentor to the greater Check Point A/NZ security engineering team.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">August 2015 - December 2018</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Security Engineer</h3>
+                            <div class="subheading mb-3">Check Point Software Technologies</div>
+                            <p>Perform pre-sales engagements to Queensland and Northern Territory customers. Active public speaking duties at industry events</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">February 2012 - August 2015</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Principal Technical Consultant - Security</h3>
+                            <div class="subheading mb-3">Queensland Health</div>
+                            <p>Delivered infrastructure, network and identity security solutions to Queensland Health's Microsoft Exchange project</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">October 2011 - February 2012</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Education-->
+            <!--section#education.resume-section.resume-section-content
+    h2.mb-5 Education
+
+    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+        .flex-grow-1
+            h3.mb-0 xxxxxxxxxx
+            .subheading.mb-3 xxxxxxxx
+            div xxxxxxxx
+            p GPA: 3.23
+        .flex-shrink-0
+            span.text-primary xxxxxxxx
+
+    .d-flex.flex-column.flex-md-row.justify-content-between
+        .flex-grow-1
+            h3.mb-0 xxxxxxxx
+            .subheading.mb-3 xxxxxxxx
+            p GPA: 3.56
+        .flex-shrink-0
+            span.text-primary xxxxxxxx
+-->
+            <hr class="m-0" />
+            <!-- Skills-->
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Skills</h2>
+                    <div class="subheading mb-3">Cloud Platforms</div>
+                    <ul class="list-inline dev-icons">
+                        <li class="list-inline-item"><i class="fab fa-aws"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-microsoft"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-google"></i></li>
+                    </ul>
+                    <div class="subheading mb-3">Skills</div>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-cogs"></i></span>
+                            Solutions Architecture and Design
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-hands-helping"></i></span>
+                            Account Management
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-cloud"></i></span>
+                            Cloud Computing
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-shield-alt"></i></span>
+                            Cloud Security
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-paper-plane"></i></span>
+                            Cloud Migrations
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-id-card"></i></span>
+                            Identity and Access Management
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-robot"></i></span>
+                            Emerging Technologies, IoT, Machine Learning
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Interests-->
+            <!--section#interests.resume-section.resume-section-content
+    h2.mb-5 Interests
+    p
+        | Apart from being a web developer, xxxxxxxx
+    p.mb-0
+        | When forced indoors, xxxxxxxx
+-->
+            <hr class="m-0" />
+            <!-- Awards-->
+            <section class="resume-section" id="awards">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Certifications</h2>
+                    <img class="img-fluid img-profile mx-auto mb-2 resizeimg" src="https://images.youracclaim.com/size/340x340/images/1fdcf6a9-de8e-4e35-96b0-e801d8411506/AWS-CloudPractitioner.png" href="https://www.youracclaim.com/badges/dd3dfca3-3ec3-49f7-bba4-f7d77b8d292d" />
+                    <img class="img-fluid img-profile mx-auto mb-2 resizeimg" src="https://images.youracclaim.com/size/340x340/images/6774b3bf-7a82-4d40-a2d1-86b412635bae/AWS-SolArchitect-Associate.png" href="https://www.youracclaim.com/badges/3982eac6-a660-476e-b34f-41a6da7000bb" />
+                    <img class="img-fluid img-profile mx-auto mb-2 resizeimg" src="https://images.youracclaim.com/size/340x340/images/ee0a9da0-1627-4031-a455-8ced6b866cc7/AWS-SysOpAdmin-Associate.png" href="https://www.youracclaim.com/badges/ddc055e7-b92b-47a8-84c3-4f927eeedcea" />
+                    <img class="img-fluid img-profile mx-auto mb-2 resizeimg" src="https://images.youracclaim.com/size/340x340/images/2a15d440-edbe-44a2-890f-0a0caf7e1442/AWS-Developer-Associate.png" href="https://www.youracclaim.com/badges/89b90271-ce01-4953-9861-127d27954ee1" />
+                    <img class="img-fluid img-profile mx-auto mb-2 resizeimg" src="https://images.youracclaim.com/size/340x340/images/b158bae7-462e-4c2c-92e6-d7a0b4cdb6c6/AWS-SolArchitect-Professional.png" href="https://www.youracclaim.com/badges/27f11091-8d67-41a2-8d31-9681fda41b57" />
+                    <img class="img-fluid img-profile mx-auto mb-2 resizeimg" src="https://images.youracclaim.com/size/340x340/images/536167dd-c888-44b8-8aad-b7577a8862f3/AWS-DevOpsEngineer-Professional.png" href="https://www.youracclaim.com/badges/4d7abcdb-1267-4e20-9283-05f4a4b06830" />
+                    <img class="img-fluid img-profile mx-auto mb-2 resizeimg" src="https://images.youracclaim.com/size/340x340/images/a8f6dbdb-636e-49a4-8d4d-e8fad8d53fa5/AWS-Security-Specialty.png" href="https://www.youracclaim.com/badges/af160e00-accd-49cd-9e47-c2b780a22aaf" />
+                    <img class="img-fluid img-profile mx-auto mb-2 resizeimg" src="https://images.youracclaim.com/size/340x340/images/d8ca0c52-8f45-4bf3-87a1-de6455b41bfc/AWS-AdvNetworking-Specialty.png" href="https://www.youracclaim.com/badges/fe82c9be-fdca-4333-b307-3e62cbbc7809" />
+                    <img class="img-fluid img-profile mx-auto mb-2 resizeimg" src="https://images.youracclaim.com/size/340x340/images/6a254dad-77e5-4e71-8049-94e5c7a15981/azure-fundamentals-600x600.png" href="https://www.youracclaim.com/badges/350c2787-344d-49fb-9725-9e434fc0cd82" />
+                    <img class="img-fluid img-profile mx-auto mb-2 resizeimg" src="https://images.youracclaim.com/size/340x340/images/131de2f5-03f5-40a7-bcce-f9ae49e3979c/CompTIA_Security_2B.png" href="https://www.youracclaim.com/badges/ad433fce-aeef-45f0-9204-ef48c6e3a7f6" />
+                    <img class="img-fluid img-profile mx-auto mb-2 resizeimg" src="https://images.youracclaim.com/size/340x340/images/5e6f5247-1d61-4932-a5da-999a7feec067/isc2_cissp2.png" href="https://www.youracclaim.com/badges/08f844a2-6d5f-44bf-98b8-1eb323723a84" />
+                </div>
+            </section>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
