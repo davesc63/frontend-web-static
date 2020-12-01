@@ -1,6 +1,6 @@
 // Counter Script - <body id="page-top" onload="updateCounter()">
 function updateCounter() {
-    fetch("https://rxxhiaphyj.execute-api.ap-southeast-2.amazonaws.com/prod/", {
+    fetch("https://rxxhiaphyj.execute-api.ap-southeast-2.amazonaws.com/prod/profile", {
         method: "GET",
     })
         .then((response) => {
